@@ -1,0 +1,87 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore dependencies in all subdirectories (e.g., Yarn Workspaces, PNPM, Lerna)
+**/node_modules/
+**/.yarn/cache/
+**/dist/
+**/build/
+**/coverage/
+
+# Temporary files and lock files
+**/.turbo/
+**/.next/
+**/.nuxt/
+**/.parcel-cache/
+**/.docusaurus/
+**/.expo/
+**/.vercel/
+**/.netlify/
+
+# Next.js
+**/.next/
+
+# Vue
+**/dist/
+**/.vite/
+
+# Angular
+**/dist/
+**/.angular/
+
+# TypeScript compilation output
+**/build/
+**/dist/
+**/.turbo/
+
+# NestJS
+**/.nestjs/
+
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# AWS
+.aws-sam/
+
+# Lerna
+lerna-debug.log
+.pnp.js
+.pnp/
+
+# TurboRepo
+.turbo/
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile
+**/.dockerignore
+
+# Firebase
+firebase-debug.log
+.firebaserc
