@@ -9,7 +9,7 @@ export interface AuthRequest extends Request {
 }
 
 export class AuthMiddleware {
-    static authenticate(req: AuthRequest, res: Response, next: NextFunction): void {
+    static authenticate(req: AuthRequest, res: Response, next: NextFunction): void{
         try {
             const token = req.headers.authorization?.split(' ')[1];
 

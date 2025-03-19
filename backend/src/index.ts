@@ -7,6 +7,7 @@ import cors from 'cors';
 import authRoutes from './users/auth.routes';
 import orderRoutes from './orders/order.routes';
 import diContainer from './di.container';
+import inviteRoutes from './invitation/invite.routes';
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ mongoose
 // Routes
 app.use('/api/auth', authRoutes(diContainer.getController("authController")));
 app.use('/api/orders', orderRoutes(diContainer.getController("orderController")));
+app.use('api/invite', inviteRoutes(diContainer.getController("inviteController")));
 
 // Root Route
 app.get('/', (req, res) => {
